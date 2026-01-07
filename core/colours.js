@@ -74,10 +74,10 @@ Blockly.Colours = {
     "quaternary": "#389438"
   },
   "data": {
-    "primary": "#FF8C1A",
-    "secondary": "#FF8000",
-    "tertiary": "#DB6E00",
-    "quaternary": "#DB6E00"
+    "primary": "#A55B80",
+    "secondary": "#844966",
+    "tertiary": "#844966",
+    "quaternary": "#844966"
   },
   // This is not a new category, but rather for differentiation
   // between lists and scalar variables.
@@ -92,6 +92,12 @@ Blockly.Colours = {
     "secondary": "#FF4D6A",
     "tertiary": "#FF3355",
     "quaternary": "#FF3355"
+  },
+  "essentials": {
+    "primary": "#5B67A5",
+    "secondary": "#495284",
+    "tertiary": "#495284",
+    "quaternary": "#495284"
   },
   "text": "#FFFFFF",
   "workspace": "#F9F9F9",
