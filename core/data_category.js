@@ -101,7 +101,7 @@ Blockly.DataCategory.addDataVariable = function(xmlList, variable) {
   // <block id="variableId" type="data_variable">
   //    <field name="VARIABLE">variablename</field>
   // </block>
-  Blockly.DataCategory.addBlock(xmlList, variable, 'data_variable', 'VARIABLE');
+  Blockly.DataCategory.addBlock(xmlList, variable, 'get_variable', 'VAR');
   // In the flyout, this ID must match variable ID for monitor syncing reasons
   xmlList[xmlList.length - 1].setAttribute('id', variable.getId());
 };
@@ -122,8 +122,8 @@ Blockly.DataCategory.addSetVariableTo = function(xmlList, variable) {
   //     </shadow>
   //   </value>
   // </block>
-  Blockly.DataCategory.addBlock(xmlList, variable, 'data_setvariableto',
-      'VARIABLE', ['VALUE', 'text', 0]);
+  Blockly.DataCategory.addBlock(xmlList, variable, 'variables_set',
+      'VAR', ['VALUE', 'text', 0]);
 };
 
 /**
@@ -142,8 +142,8 @@ Blockly.DataCategory.addChangeVariableBy = function(xmlList, variable) {
   //     </shadow>
   //   </value>
   // </block>
-  Blockly.DataCategory.addBlock(xmlList, variable, 'data_changevariableby',
-      'VARIABLE', ['VALUE', 'math_number', 1]);
+  Blockly.DataCategory.addBlock(xmlList, variable, 'math_change',
+      'VAR', ['DELTA', 'math_number', 1]);
 };
 
 /**

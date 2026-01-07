@@ -29,7 +29,7 @@ goog.require('Blockly.constants');
 goog.require('Blockly.ScratchBlocks.VerticalExtensions');
 
 
-Blockly.Blocks['data_variable'] = {
+Blockly.Blocks['get_variable'] = {
   /**
    * Block of Variables
    * @this Blockly.Block
@@ -42,18 +42,17 @@ Blockly.Blocks['data_variable'] = {
         {
           "type": "field_variable_getter",
           "text": "",
-          "name": "VARIABLE",
+          "name": "VAR",
           "variableType": ""
         }
       ],
       "category": Blockly.Categories.data,
-      "checkboxInFlyout": true,
       "extensions": ["contextMenu_getVariableBlock", "colours_data", "output_string"]
     });
   }
 };
 
-Blockly.Blocks['data_setvariableto'] = {
+Blockly.Blocks['variables_set'] = {
   /**
    * Block to set variable to a certain value
    * @this Blockly.Block
@@ -64,7 +63,7 @@ Blockly.Blocks['data_setvariableto'] = {
       "args0": [
         {
           "type": "field_variable",
-          "name": "VARIABLE"
+          "name": "VAR"
         },
         {
           "type": "input_value",
@@ -77,7 +76,7 @@ Blockly.Blocks['data_setvariableto'] = {
   }
 };
 
-Blockly.Blocks['data_changevariableby'] = {
+Blockly.Blocks['math_change'] = {
   /**
    * Block to change variable by a certain value
    * @this Blockly.Block
@@ -88,11 +87,11 @@ Blockly.Blocks['data_changevariableby'] = {
       "args0": [
         {
           "type": "field_variable",
-          "name": "VARIABLE"
+          "name": "VAR"
         },
         {
           "type": "input_value",
-          "name": "VALUE"
+          "name": "DELTA"
         }
       ],
       "category": Blockly.Categories.data,
